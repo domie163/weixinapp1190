@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forget/forget",
+    "pages/center/center",
+    "pages/user-info/user-info",
+    "pages/xuesheng/list",
+    "pages/xuesheng/add-or-update",
+    "pages/xuesheng/detail",
+    "pages/jiaoshi/list",
+    "pages/jiaoshi/add-or-update",
+    "pages/jiaoshi/detail",
+    "pages/shixigonggao/list",
+    "pages/shixigonggao/add-or-update",
+    "pages/shixigonggao/detail",
+    "pages/xueyuanxinxi/list",
+    "pages/xueyuanxinxi/add-or-update",
+    "pages/xueyuanxinxi/detail",
+    "pages/zhuanyexinxi/list",
+    "pages/zhuanyexinxi/add-or-update",
+    "pages/zhuanyexinxi/detail",
+    "pages/shixixinxi/list",
+    "pages/shixixinxi/add-or-update",
+    "pages/shixixinxi/detail",
+    "pages/xueshengdaka/list",
+    "pages/xueshengdaka/add-or-update",
+    "pages/xueshengdaka/detail",
+    "pages/dakajilu/list",
+    "pages/dakajilu/add-or-update",
+    "pages/dakajilu/detail",
+    "pages/shixiriji/list",
+    "pages/shixiriji/add-or-update",
+    "pages/shixiriji/detail",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "实习记录小程序",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#339999",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shixigonggao/list",
+        "iconPath": "/static/tabs/icon1.png",
+        "selectedIconPath": "/static/tabs/icon1_act.png",
+        "text": "实习公告"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "uni-load-more": "/components/mescroll-uni/mescroll-uni",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

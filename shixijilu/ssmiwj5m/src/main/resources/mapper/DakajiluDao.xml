@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.DakajiluDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.DakajiluEntity" id="dakajiluMap">
+        <result property="dakabianhao" column="dakabianhao"/>
+        <result property="shijian" column="shijian"/>
+        <result property="jiaoshigonghao" column="jiaoshigonghao"/>
+        <result property="jiaoshixingming" column="jiaoshixingming"/>
+        <result property="dakarenshu" column="dakarenshu"/>
+        <result property="weidakarenshu" column="weidakarenshu"/>
+        <result property="beizhu" column="beizhu"/>
+        <result property="userid" column="userid"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.DakajiluVO" >
+		SELECT * FROM dakajilu  dakajilu         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.DakajiluVO" >
+		SELECT  dakajilu.* FROM dakajilu  dakajilu
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.DakajiluView" >
+
+		SELECT  dakajilu.* FROM dakajilu  dakajilu 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.DakajiluView" >
+		SELECT * FROM dakajilu  dakajilu <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	
+</mapper>
